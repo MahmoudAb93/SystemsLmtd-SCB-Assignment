@@ -1,0 +1,19 @@
+*** Settings ***
+
+Resource    ../Common.robot
+
+
+
+*** Keywords ***
+
+Open Sauce labs and fill login details
+    [Arguments]     ${userName}     ${password}
+        New Page            ${Base_URL}
+        fill text           css=input[id="user-name"]          ${userName}
+        fill text        	css=input[id="password"]                 ${password}
+
+Click on login button
+        click           id=login-button
+
+Verify Login Page Is Open
+    Wait For Elements State    css=input[id="login-button"]    visible

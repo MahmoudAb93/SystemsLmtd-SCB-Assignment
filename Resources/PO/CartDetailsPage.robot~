@@ -1,0 +1,27 @@
+*** Settings ***
+
+
+Resource    ../Common.robot
+
+
+
+*** Keywords ***
+Assert that the user have successfully navigated to Cart Page
+    Get Element       css=.cart_list
+
+Verify number of Cart Products
+    [Arguments]    ${available_products}
+    ${count}=    Get Element Count    css=div.cart_item
+    Should Be Equal As Numbers    ${count}    ${available_products}
+
+Check that checkout button is present
+    Wait For Elements State      xpath=//*[@id="checkout"]   visible
+
+Proceed to checkout
+    Click    xpath=//*[@class="btn_action checkout_button"]
+
+Check that continue shopping button is present
+    Wait For Elements State      xpath=//a[contains(text(),"Continue Shopping")]  visible
+
+Continue Shopping
+    Click    xpath=//a[contains(text(),"Continue Shopping")]
