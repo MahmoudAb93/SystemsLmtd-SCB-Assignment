@@ -1,6 +1,6 @@
 # Systems Limited & SCB Automation Assignment
 
-This robot framework project runs with playwright (browser-Library).
+This robot framework project runs with Playwright (browser-Library).
 
 ## Author
 
@@ -10,8 +10,8 @@ This robot framework project runs with playwright (browser-Library).
 
 - Download python v3.31 from https://www.python.org/downloads/
 - Download pycharm ide
-- Download Hyper Framework Support plugin on pycharm
-- Download node js from https://nodejs.org/en
+- Download Hyper Framework Support plugin on PyCharm
+- Download Node.js from https://nodejs.org/en
 - Install "npm install playwright" on cmd
 - Install "pip install robotframework" on cmd
 - Install "pip install -U robotframework-browser" on cmd
@@ -19,7 +19,7 @@ This robot framework project runs with playwright (browser-Library).
 
 ## Running the project
 
-### In order to run the project you can either run the ".robot" files under the "Tests" directory,or run the following commands in the terminal.
+### To run the project, run the ".robot" files under the "Tests" directory, or run the following commands in the terminal.
 #### Run Commands:
 ##### For all test cases:
 - RUN  "py -m robot -d Results      -i       Test        Tests"
@@ -52,7 +52,7 @@ This robot framework project runs with playwright (browser-Library).
 - RUN  "py -m robot -d Results      -i       Negative        Tests"
 
 ## Reports
-- To review the report showing test results, after each run open the generated "report.html" file inside the "Results" directory in a browser.
+- After each run, review the report showing test results and open the generated "report.html" file in a browser.
 
 
 
